@@ -1,0 +1,14 @@
+{
+  "name": "ecopoint",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @ecopoint/web --filter @ecopoint/api dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  },
+  "dependencies": {
+    "pnpm": "^12.15.0"
+  }
+}
