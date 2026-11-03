@@ -9,14 +9,14 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint src"
   },
   "dependencies": {
-    "zod": "latest"
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "eslint": "latest",
-    "typescript-eslint": "latest"
+    "typescript": "7.0.2",
+    "eslint": "10.14.0",
+    "typescript-eslint": "8.72.1"
   }
 }

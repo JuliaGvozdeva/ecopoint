@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@ecopoint/contracts": "workspace:*",
-    "@fastify/cors": "latest",
-    "fastify": "latest"
+    "@fastify/cors": "11.4.0",
+    "fastify": "5.12.8"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "tsx": "latest",
-    "typescript": "latest",
-    "eslint": "latest",
-    "typescript-eslint": "latest"
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "eslint": "10.14.0",
+    "typescript-eslint": "8.72.1"
   }
 }
