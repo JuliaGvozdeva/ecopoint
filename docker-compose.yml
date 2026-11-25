@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgis/postgis:17-3.5
+    platform: linux/amd64
+    container_name: ecoapp-postgres
+    environment:
+      POSTGRES_DB: ecoapp
+      POSTGRES_USER: ecoapp
+      POSTGRES_PASSWORD: ecoapp
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

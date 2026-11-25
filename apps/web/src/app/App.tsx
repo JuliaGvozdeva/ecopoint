@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import type { HealthResponse } from '@ecopoint/contracts';
 
 export function App() {
   const [apiStatus, setApiStatus] = useState<'loading' | 'online' | 'offline'>('loading');
@@ -10,9 +9,8 @@ export function App() {
     fetch('/health', { signal: controller.signal })
       .then((response) => {
         if (!response.ok) throw new Error('API health check failed');
-        return response.json() as Promise<HealthResponse>;
+        setApiStatus('online');
       })
-      .then(() => setApiStatus('online'))
       .catch((error: unknown) => {
         if (error instanceof Error && error.name === 'AbortError') return;
         setApiStatus('offline');

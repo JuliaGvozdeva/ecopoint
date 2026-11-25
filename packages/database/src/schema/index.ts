@@ -1,0 +1,1 @@
+export { collectionPoints } from './collection-points.js';
